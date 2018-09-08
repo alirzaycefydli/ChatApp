@@ -295,7 +295,7 @@ public class ChatActivity extends AppCompatActivity {
                                         @Override
                                         public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
 
-                                            if (databaseError == null) {
+                                            if (databaseError != null) {
                                                 Toast.makeText(ChatActivity.this, "Error: " + databaseError.getMessage(), Toast.LENGTH_SHORT).show();
                                             }
                                         }
